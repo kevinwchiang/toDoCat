@@ -1,0 +1,22 @@
+#title{
+  font-size: 30px;
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+form{
+  text-align: center;
+}
+
+.textInput{
+  width: 50%;
+  height: 30px;
+  margin: 10px;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+}
+
+.checkbox{
+  width: 30px;
+  height: 30px;
+}
