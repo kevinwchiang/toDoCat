@@ -1,0 +1,26 @@
+<html ng-app='first_app'>
+  <head>
+    <meta charset="utf-8" />
+    <title>Catherine's To Do List</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h1>Catherine's To Do List</h1>
+    <div ng-controller='toDoListController'>
+
+    <label>Search: <input ng-model="searchText"></label>
+      <div ng-repeat='elements in arr | filter:searchText'>
+        <input ng-if='!elements.done' ng-model='elements.done' type='checkbox' class='checkbox'>
+        <input ng-if='!elements.done' ng-model='elements.text' type='text' class='textInput'> 
+      </div>
+    </div>
+<!--     <div ng-controller='toDoListController'>
+      <div ng-model='number'> {{ number }} </div>
+
+      <div ng-click='increment(number)'> CLICK ME </div>
+    </div> -->
+
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
